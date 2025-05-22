@@ -98,18 +98,6 @@
         text-align: center;
       }
 
-      /* #footer {
-            width: 100%;
-            min-height: 5vh;
-            padding-top: 2vh;
-            padding-bottom: 2vh;
-            text-align: center;
-            line-height: 25px;
-            font-size: 13px;
-            position: relative;
-            z-index: 5;
-          } */
-
       #features {
         padding-top: 40vh;
         padding-bottom: 10vh;
@@ -212,7 +200,7 @@
 
     <header></header>
 
-    <main>
+    <div>
       <div class="hero">
         <img
           id="bg"
@@ -479,68 +467,16 @@
             </p>
           </div>
         </section>
+      </div>
 
-        <div class="sidebar-card-wrapper">
-          <div class="sidebar-card-content">
-            <div class="sidebar-story-category">
-              Stories of the Collapsed Chinese Middle Class Dream
-            </div>
-            <h2 class="sidebar-title">When the Hospital Closed Its Doors</h2>
-            <div class="sidebar-card-row">
-              <div class="sidebar-content">
-                <p>
-                  Zhang, 32, owned an e-commerce livestreaming business in Hebei, northern China,
-                  while his wife stayed at home to care for their child.
-                </p>
-                <p>
-                  He hadn’t started out wealthy. Zhang began his career as a low-level employee at
-                  an e-commerce service company, earning just 5,000 yuan a month (around $690). Over
-                  the course of eight years, he gradually grew his income to 20,000 yuan and then to
-                  an annual salary of 300,000–500,000 yuan ($41,000 – $69,000).
-                </p>
-                <p>
-                  In 2021, after years of saving, Zhang and his wife bought a new 120-square-meter
-                  apartment. They were full of hope for the future. But then the pandemic hit — and
-                  everything changed. ...
-                </p>
-              </div>
-              <div class="sidebar-image">
-                <img src="assets/zhanjian.jpg" alt="Zhang and his wife" />
-              </div>
-            </div>
-            <div class="sidebar-button">
-              <button class="open-sidebar" onclick="openSidebar('hospital')">
-                Open Story on this Page
-              </button>
-            </div>
+      <div class="sidebar-card-wrapper">
+        <div class="sidebar-card-content">
+          <div class="sidebar-story-category">
+            Stories of the Collapsed Chinese Middle Class Dream
           </div>
-        </div>
-
-        <div
-          class="sidebar-overlay hidden"
-          data-story="hospital"
-          style="cursor: default"
-          onclick="if(event.target === this) { closeSidebar(); }"
-        >
-          <div class="sidebar" onclick="event.stopPropagation();">
-            <button class="close-sidebar" onclick="closeSidebar()">×</button>
-            <div class="sidebar-story-category" style="text-align: center">
-              Stories of the Collapsed Chinese Middle Class Dream
-            </div>
-            <h2 class="sidebar-title">When the Hospital Closed Its Doors</h2>
-            <figure class="sidebar-story-image">
-              <img src="assets/zhanjian.jpg" alt="Zhang and his wife" />
-              <figcaption
-                class="image-caption"
-                style="margin-bottom: 30px; padding-bottom: 10px; display: block; clear: both"
-              >
-                Zhang Jian and his wife sit at a family hostel in Rowland Heights, Los Angeles.
-              </figcaption>
-            </figure>
-            <div
-              class="sidebar-story-content"
-              style="margin-top: 40px; position: relative; z-index: 0"
-            >
+          <h2 class="sidebar-title">When the Hospital Closed Its Doors</h2>
+          <div class="sidebar-card-row">
+            <div class="sidebar-content">
               <p>
                 Zhang, 32, owned an e-commerce livestreaming business in Hebei, northern China,
                 while his wife stayed at home to care for their child.
@@ -549,91 +485,143 @@
                 He hadn’t started out wealthy. Zhang began his career as a low-level employee at an
                 e-commerce service company, earning just 5,000 yuan a month (around $690). Over the
                 course of eight years, he gradually grew his income to 20,000 yuan and then to an
-                annual salary of 300,000–500,000 yuan ($41,000 – 69,000).
+                annual salary of 300,000–500,000 yuan ($41,000 – $69,000).
               </p>
               <p>
                 In 2021, after years of saving, Zhang and his wife bought a new 120-square-meter
                 apartment. They were full of hope for the future. But then the pandemic hit — and
-                everything changed.
-              </p>
-              <p>
-                Zhang’s first impressions of America had taken root more than a decade earlier. In
-                his early twenties, he was a regular viewer of Xiaoshuo (“Talks With Gao Xiaosong”),
-                a hugely popular Chinese talk show. On the show, Gao spoke casually but insightfully
-                about Western institutions, history, and how Americans enjoyed political freedoms,
-                legal rights, and the dignity of choice. Zhang came to see the U.S. as “a beacon of
-                democracy,” where anyone could live a decent life through hard work. That idea stuck
-                with him for years. It took a crisis to bring it to the surface.
-              </p>
-              <p>
-                In late 2020, at the height of COVID-19, Zhang’s infant daughter began showing
-                strange eye movements, a persistent twitch. She had been born prematurely and had
-                already survived two serious lung infections. Concerned about her fragile health,
-                Zhang feared the worst.
-              </p>
-              <p>
-                He and his wife rushed to Beijing Children’s Hospital, hoping to see a neurologist.
-                But before they could even explain, the doctor asked for their travel history via
-                China’s mandatory COVID “health code” app, which tracked users’ movements and
-                exposure risks.
-              </p>
-              <p>
-                When he saw that their registered household was in Shijiazhuang, a city with active
-                COVID cases, the doctor refused to see them. He called security and had the family
-                escorted out of the clinic.
-              </p>
-              <p>“Get out,” he said. “We don’t accept patients from there.”</p>
-              <p>
-                Zhang pleaded. , explaining that he didn’t live in Shijiazhuang, that he was only
-                registered there, and offeredoffering to keep the visit off the official record so
-                the doctor wouldn’t face liability. But none of it worked. All he wanted was a
-                verbal confirmation: that his child wasn’t having seizures, but this reassurance
-                never came.
-              </p>
-              <p>
-                “There was no compassion,” Zhang said. “He wasn’t acting like a doctor. He was just
-                protecting his job.”
-              </p>
-              <p>
-                During the COVID-19 lockdown, Zhang also had started watching Chinese-language
-                YouTube channels hosted overseas, particularly those that analyzed China’s economy
-                using official data.
-              </p>
-              <p>
-                “The more I watched, the more scared I got,” Zhang said. “Sometimes, I’d wake up at
-                night soaked in sweat.”
-              </p>
-              <p>
-                Between the anxiety over his child’s health and the bleak economic forecasts,
-                Zhang’s faith in the future began to collapse. He decided he couldn’t wait any
-                longer.
-              </p>
-              <p>
-                To leave China, Zhang sold an old apartment and his BMW X5. The new home had just
-                been renovated, with over 100,000 yuan poured into it. Letting it go felt too hard,
-                so they kept it, partly for comfort, partly as a backup plan.
-              </p>
-              <p>He moved his assets into a Hong Kong bank account.</p>
-              <p>
-                “I wasn’t afraid of being poor,” he said. “I was afraid that when I wanted to leave,
-                I’d be trapped.”
-              </p>
-              <p>
-                Zhang didn’t hesitate. The only painful part was leaving his father who had been
-                diagnosed with multiple system atrophy, a rare neurodegenerative disease with no
-                known cure.
-              </p>
-              <p>Doctors gave him only a few years to live.</p>
-              <p>“I may never see him again,” Zhang said. “But he supported my decision.”</p>
-              <p>
-                With his father’s blessing, Zhang boarded a plane with his wife and daughter, and
-                left everything else behind.
+                everything changed. ...
               </p>
             </div>
-            <div class="sidebar-spacer"></div>
+            <div class="sidebar-image">
+              <img src="assets/zhanjian.jpg" alt="Zhang and his wife" />
+            </div>
+          </div>
+          <div class="sidebar-button">
+            <button class="open-sidebar" onclick="openSidebar('hospital')">
+              Open Story on this Page
+            </button>
           </div>
         </div>
+      </div>
 
+      <div
+        class="sidebar-overlay hidden"
+        data-story="hospital"
+        style="cursor: default"
+        onclick="if(event.target === this) { closeSidebar(); }"
+      >
+        <div class="sidebar" onclick="event.stopPropagation();">
+          <button class="close-sidebar" onclick="closeSidebar()">×</button>
+          <div class="sidebar-story-category" style="text-align: center">
+            Stories of the Collapsed Chinese Middle Class Dream
+          </div>
+          <h2 class="sidebar-title">When the Hospital Closed Its Doors</h2>
+          <figure class="sidebar-story-image">
+            <img src="assets/zhanjian.jpg" alt="Zhang and his wife" />
+            <figcaption
+              class="image-caption"
+              style="margin-bottom: 30px; padding-bottom: 10px; display: block; clear: both"
+            >
+              Zhang Jian and his wife sit at a family hostel in Rowland Heights, Los Angeles.
+            </figcaption>
+          </figure>
+          <div
+            class="sidebar-story-content"
+            style="margin-top: 40px; position: relative; z-index: 0"
+          >
+            <p>
+              Zhang, 32, owned an e-commerce livestreaming business in Hebei, northern China, while
+              his wife stayed at home to care for their child.
+            </p>
+            <p>
+              He hadn’t started out wealthy. Zhang began his career as a low-level employee at an
+              e-commerce service company, earning just 5,000 yuan a month (around $690). Over the
+              course of eight years, he gradually grew his income to 20,000 yuan and then to an
+              annual salary of 300,000–500,000 yuan ($41,000 – 69,000).
+            </p>
+            <p>
+              In 2021, after years of saving, Zhang and his wife bought a new 120-square-meter
+              apartment. They were full of hope for the future. But then the pandemic hit — and
+              everything changed.
+            </p>
+            <p>
+              Zhang’s first impressions of America had taken root more than a decade earlier. In his
+              early twenties, he was a regular viewer of Xiaoshuo (“Talks With Gao Xiaosong”), a
+              hugely popular Chinese talk show. On the show, Gao spoke casually but insightfully
+              about Western institutions, history, and how Americans enjoyed political freedoms,
+              legal rights, and the dignity of choice. Zhang came to see the U.S. as “a beacon of
+              democracy,” where anyone could live a decent life through hard work. That idea stuck
+              with him for years. It took a crisis to bring it to the surface.
+            </p>
+            <p>
+              In late 2020, at the height of COVID-19, Zhang’s infant daughter began showing strange
+              eye movements, a persistent twitch. She had been born prematurely and had already
+              survived two serious lung infections. Concerned about her fragile health, Zhang feared
+              the worst.
+            </p>
+            <p>
+              He and his wife rushed to Beijing Children’s Hospital, hoping to see a neurologist.
+              But before they could even explain, the doctor asked for their travel history via
+              China’s mandatory COVID “health code” app, which tracked users’ movements and exposure
+              risks.
+            </p>
+            <p>
+              When he saw that their registered household was in Shijiazhuang, a city with active
+              COVID cases, the doctor refused to see them. He called security and had the family
+              escorted out of the clinic.
+            </p>
+            <p>“Get out,” he said. “We don’t accept patients from there.”</p>
+            <p>
+              Zhang pleaded. , explaining that he didn’t live in Shijiazhuang, that he was only
+              registered there, and offeredoffering to keep the visit off the official record so the
+              doctor wouldn’t face liability. But none of it worked. All he wanted was a verbal
+              confirmation: that his child wasn’t having seizures, but this reassurance never came.
+            </p>
+            <p>
+              “There was no compassion,” Zhang said. “He wasn’t acting like a doctor. He was just
+              protecting his job.”
+            </p>
+            <p>
+              During the COVID-19 lockdown, Zhang also had started watching Chinese-language YouTube
+              channels hosted overseas, particularly those that analyzed China’s economy using
+              official data.
+            </p>
+            <p>
+              “The more I watched, the more scared I got,” Zhang said. “Sometimes, I’d wake up at
+              night soaked in sweat.”
+            </p>
+            <p>
+              Between the anxiety over his child’s health and the bleak economic forecasts, Zhang’s
+              faith in the future began to collapse. He decided he couldn’t wait any longer.
+            </p>
+            <p>
+              To leave China, Zhang sold an old apartment and his BMW X5. The new home had just been
+              renovated, with over 100,000 yuan poured into it. Letting it go felt too hard, so they
+              kept it, partly for comfort, partly as a backup plan.
+            </p>
+            <p>He moved his assets into a Hong Kong bank account.</p>
+            <p>
+              “I wasn’t afraid of being poor,” he said. “I was afraid that when I wanted to leave,
+              I’d be trapped.”
+            </p>
+            <p>
+              Zhang didn’t hesitate. The only painful part was leaving his father who had been
+              diagnosed with multiple system atrophy, a rare neurodegenerative disease with no known
+              cure.
+            </p>
+            <p>Doctors gave him only a few years to live.</p>
+            <p>“I may never see him again,” Zhang said. “But he supported my decision.”</p>
+            <p>
+              With his father’s blessing, Zhang boarded a plane with his wife and daughter, and left
+              everything else behind.
+            </p>
+          </div>
+          <div class="sidebar-spacer"></div>
+        </div>
+      </div>
+
+      <div class="main-content">
         <section>
           <div class="immigration-part">
             <div class="subhead-icon">
@@ -664,12 +652,14 @@
             </p>
           </div>
         </section>
+      </div>
 
-        <div id="scroll-container">
-          <div id="map"></div>
-          <div id="story"></div>
-        </div>
+      <div id="scroll-container">
+        <div id="map"></div>
+        <div id="story"></div>
+      </div>
 
+      <div class="main-content">
         <section class="immigration">
           <div class="immigration-part" style="text-align: center">
             <div style="max-width: 600px; margin: 0 auto; text-align: left">
@@ -697,82 +687,17 @@
             <img src="assets/new-new-process-chart.png" alt="Asylum application process chart" />
           </div>
         </section>
-        <div>
-          <div class="sidebar-card-wrapper">
-            <div class="sidebar-card-content">
-              <div class="sidebar-story-category">
-                Stories of the Collapsed Chinese Middle Class Dream
-              </div>
-              <h2 class="sidebar-title">The Crossing</h2>
-              <div class="sidebar-card-row">
-                <div class="sidebar-content">
-                  <p>
-                    Carrying their daughter across mountains and broken borders, Jian Zhang’s family
-                    entered the U.S. in silence.
-                  </p>
-                  <p>
-                    In Tijuana, Zhang and his family were taken to a house on a hilltop, arranged by
-                    a smuggler.
-                  </p>
-                  <p>
-                    Zhang remembered the place had three bedrooms, one bathroom, a living room with
-                    a sofa and a pull-out bed. Surveillance cameras were mounted in the corners.
-                    Every move they made was watched.
-                  </p>
-                  <p>
-                    Alongside his wife and daughter, three other Chinese migrants also stayed there.
-                  </p>
-                  <p>On their third night, at 4 a.m., they set out. ...</p>
-                </div>
-                <div class="sidebar-image">
-                  <img src="assets/crossing.jpg" alt="Zhang and his wife crossing the river" />
-                </div>
-              </div>
-              <div class="sidebar-button">
-                <button class="open-sidebar" onclick="openSidebar('crossing')">
-                  Open Story on this Page
-                </button>
-              </div>
-            </div>
-          </div>
+      </div>
 
-          <div
-            class="sidebar-overlay hidden"
-            data-story="crossing"
-            style="cursor: default"
-            onclick="if(event.target === this) { closeSidebar(); }"
-          >
-            <div class="sidebar" onclick="event.stopPropagation();">
-              <button class="close-sidebar" onclick="closeSidebar()">×</button>
-              <div class="sidebar-story-category" style="text-align: center">
-                Stories of the Collapsed Chinese Middle Class Dream
-              </div>
-              <h2 class="sidebar-title">The Crossing</h2>
-              <figure class="sidebar-story-image">
-                <img src="assets/crossing.jpg" alt="Zhang and his wife crossing the river" />
-                <figcaption
-                  class="image-caption"
-                  style="
-                    margin-top: 300px;
-                    margin-bottom: 30px;
-                    padding-bottom: 10px;
-                    display: block;
-                    clear: both;
-                    visibility: visible;
-                    opacity: 1;
-                    position: relative;
-                    z-index: 5;
-                    text-align: center;
-                    margin-top: 10px;
-                  "
-                >
-                  The Zhang family and other migrants cross a river during their journey to the U.S.
-                </figcaption>
-              </figure>
-              <div
-                class="sidebar-story-content"
-                style="margin-top: 40px; position: relative; z-index: 0"
-              >
+      <div>
+        <div class="sidebar-card-wrapper">
+          <div class="sidebar-card-content">
+            <div class="sidebar-story-category">
+              Stories of the Collapsed Chinese Middle Class Dream
+            </div>
+            <h2 class="sidebar-title">The Crossing</h2>
+            <div class="sidebar-card-row">
+              <div class="sidebar-content">
                 <p>
                   Carrying their daughter across mountains and broken borders, Jian Zhang’s family
                   entered the U.S. in silence.
@@ -789,85 +714,152 @@
                 <p>
                   Alongside his wife and daughter, three other Chinese migrants also stayed there.
                 </p>
-                <p>On their third night, at 4 a.m., they set out.</p>
-                <p>
-                  By 5 a.m., with the sky still dark, a car dropped them at the base of a mountain.
-                </p>
-
-                <p>
-                  Zhang checked his phone: the straight-line distance to the U.S. border was just
-                  2.8 miles.
-                </p>
-
-                <p>But what looked short on the map was far more treacherous in reality.</p>
-
-                <p>Two silent Mexican guides led the way.</p>
-
-                <p>
-                  The mountain was low, but winding. They walked through wild brush, following a
-                  faint trail worn by others. At times it was wide enough for two people, other
-                  times barely the width of a footstep.
-                </p>
-
-                <p>
-                  Zhang’s wife carried a 20-pound backpack. Zhang strapped their 30-pound daughter
-                  to his chest with a harness. The slope was steep and slick. One misstep could have
-                  sent them sliding down a ravine. His calves began to cramp. He stumbled more than
-                  once, clenching his jaw to stay upright.
-                </p>
-
-                <p>As they walked, dawn crept in.</p>
-
-                <p>
-                  Again and again, Zhang asked, “How much farther?” Each time, the guides replied,
-                  “One hour.”
-                </p>
-
-                <p>An hour passed.</p>
-
-                <p>Then another.</p>
-
-                <p>Still, they climbed.</p>
-
-                <p>
-                  By 9:30 a.m., exhausted, they reached the top. Zhang looked back, and realized
-                  they had crossed not one mountain, but several.
-                </p>
-
-                <p>Ahead of them was the U.S.–Mexico border.</p>
-
-                <p>
-                  It wasn’t a tall concrete wall or an imposing steel fence. It was a worn,
-                  one-meter-high strand of barbed wire, which is bent, trampled, and barely
-                  standing.
-                </p>
-
-                <p>They stepped over it, as simply as crossing a line.</p>
-
-                <p>There was no cheering, no tears, just fatigue.</p>
-
-                <p>
-                  Zhang’s legs were trembling, locked in cramps. His wife was drenched in sweat. But
-                  their daughter never cried, not once.
-                </p>
-
-                <p>“She’s only four,” Zhang said. “But she understood she had to stay quiet.”</p>
-
-                <p>
-                  “I felt nothing,” he said later. “We were already too exhausted to feel anything
-                  at all.”
-                </p>
-
-                <p>
-                  Like many migrants who enter with children, Zhang and his family were quickly
-                  detained by border patrol agents, but only for a short time. After less than 24
-                  hours in custody, they were released and allowed to file their asylum claim.
-                </p>
+                <p>On their third night, at 4 a.m., they set out. ...</p>
               </div>
-              <div class="sidebar-spacer"></div>
+              <div class="sidebar-image">
+                <img src="assets/crossing.jpg" alt="Zhang and his wife crossing the river" />
+              </div>
+            </div>
+            <div class="sidebar-button">
+              <button class="open-sidebar" onclick="openSidebar('crossing')">
+                Open Story on this Page
+              </button>
             </div>
           </div>
+        </div>
 
+        <div
+          class="sidebar-overlay hidden"
+          data-story="crossing"
+          style="cursor: default"
+          onclick="if(event.target === this) { closeSidebar(); }"
+        >
+          <div class="sidebar" onclick="event.stopPropagation();">
+            <button class="close-sidebar" onclick="closeSidebar()">×</button>
+            <div class="sidebar-story-category" style="text-align: center">
+              Stories of the Collapsed Chinese Middle Class Dream
+            </div>
+            <h2 class="sidebar-title">The Crossing</h2>
+            <figure class="sidebar-story-image">
+              <img src="assets/crossing.jpg" alt="Zhang and his wife crossing the river" />
+              <figcaption
+                class="image-caption"
+                style="
+                  margin-top: 300px;
+                  margin-bottom: 30px;
+                  padding-bottom: 10px;
+                  display: block;
+                  clear: both;
+                  visibility: visible;
+                  opacity: 1;
+                  position: relative;
+                  z-index: 5;
+                  text-align: center;
+                  margin-top: 10px;
+                "
+              >
+                The Zhang family and other migrants cross a river during their journey to the U.S.
+              </figcaption>
+            </figure>
+            <div
+              class="sidebar-story-content"
+              style="margin-top: 40px; position: relative; z-index: 0"
+            >
+              <p>
+                Carrying their daughter across mountains and broken borders, Jian Zhang’s family
+                entered the U.S. in silence.
+              </p>
+              <p>
+                In Tijuana, Zhang and his family were taken to a house on a hilltop, arranged by a
+                smuggler.
+              </p>
+              <p>
+                Zhang remembered the place had three bedrooms, one bathroom, a living room with a
+                sofa and a pull-out bed. Surveillance cameras were mounted in the corners. Every
+                move they made was watched.
+              </p>
+              <p>
+                Alongside his wife and daughter, three other Chinese migrants also stayed there.
+              </p>
+              <p>On their third night, at 4 a.m., they set out.</p>
+              <p>
+                By 5 a.m., with the sky still dark, a car dropped them at the base of a mountain.
+              </p>
+
+              <p>
+                Zhang checked his phone: the straight-line distance to the U.S. border was just 2.8
+                miles.
+              </p>
+
+              <p>But what looked short on the map was far more treacherous in reality.</p>
+
+              <p>Two silent Mexican guides led the way.</p>
+
+              <p>
+                The mountain was low, but winding. They walked through wild brush, following a faint
+                trail worn by others. At times it was wide enough for two people, other times barely
+                the width of a footstep.
+              </p>
+
+              <p>
+                Zhang’s wife carried a 20-pound backpack. Zhang strapped their 30-pound daughter to
+                his chest with a harness. The slope was steep and slick. One misstep could have sent
+                them sliding down a ravine. His calves began to cramp. He stumbled more than once,
+                clenching his jaw to stay upright.
+              </p>
+
+              <p>As they walked, dawn crept in.</p>
+
+              <p>
+                Again and again, Zhang asked, “How much farther?” Each time, the guides replied,
+                “One hour.”
+              </p>
+
+              <p>An hour passed.</p>
+
+              <p>Then another.</p>
+
+              <p>Still, they climbed.</p>
+
+              <p>
+                By 9:30 a.m., exhausted, they reached the top. Zhang looked back, and realized they
+                had crossed not one mountain, but several.
+              </p>
+
+              <p>Ahead of them was the U.S.–Mexico border.</p>
+
+              <p>
+                It wasn’t a tall concrete wall or an imposing steel fence. It was a worn,
+                one-meter-high strand of barbed wire, which is bent, trampled, and barely standing.
+              </p>
+
+              <p>They stepped over it, as simply as crossing a line.</p>
+
+              <p>There was no cheering, no tears, just fatigue.</p>
+
+              <p>
+                Zhang’s legs were trembling, locked in cramps. His wife was drenched in sweat. But
+                their daughter never cried, not once.
+              </p>
+
+              <p>“She’s only four,” Zhang said. “But she understood she had to stay quiet.”</p>
+
+              <p>
+                “I felt nothing,” he said later. “We were already too exhausted to feel anything at
+                all.”
+              </p>
+
+              <p>
+                Like many migrants who enter with children, Zhang and his family were quickly
+                detained by border patrol agents, but only for a short time. After less than 24
+                hours in custody, they were released and allowed to file their asylum claim.
+              </p>
+            </div>
+            <div class="sidebar-spacer"></div>
+          </div>
+        </div>
+
+        <div class="main-content">
           <section class="us-part">
             <div class="subhead-icon">
               <img src="assets/liberty.png" alt="US icon" />
@@ -1025,6 +1017,7 @@
 
             <p>Here, all of that was erased.</p>
           </section>
+</div>
 
           <div class="sidebar-card-wrapper">
             <div class="sidebar-card-content">
@@ -1241,6 +1234,7 @@
           </div>
         </div>
 
+        <div class="main-content">
         <section>
           <div class="deportation-part">
             <div class="subhead-icon">
@@ -1441,14 +1435,9 @@
           </div>
         </section>
       </div>
+    </div>
     </main>
     <footer>
-      <div class="footer-top">
-        <h4><strong>About</strong></h4>
-        <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
-          Back to Top
-        </button>
-      </div>
       <p>
         <i>Slipping Into America</i>
         &nbsp;is a thesis project produced by Iris Qiu and Edison Wu at the UC Berkeley Graduate
@@ -1529,8 +1518,5 @@
         }, 300);
       }
     </script>
-    <button class="mobile-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
-      ↑
-    </button>
   </body>
 </html>

@@ -9,16 +9,6 @@ footer {
   width: 100%;
 }
 
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 footer h4 {
   font-size: 18px;
   margin: 0;
@@ -60,11 +50,6 @@ footer p {
     padding: 20px 15px;
     position: relative;
     padding-bottom: 80px; /* Add extra padding at the bottom for the button */
-  }
-
-  .footer-top {
-    flex-direction: column;
-    gap: 15px;
   }
 
   footer h4 {
