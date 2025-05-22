@@ -92,14 +92,18 @@
   .chart-title {
     font-size: 1.1rem;
     text-align: left;
-    margin: auto 1rem;
+    margin: auto 0;
   }
 
   .chart-subtitle {
     font-size: 0.8rem;
-    margin: auto 1rem;
+    margin: auto 0;
     text-align: left;
     padding-top: 0.5rem;
+  }
+
+  .chart-source {
+    font-size: 0.5rem;
   }
 
   #d3-container {

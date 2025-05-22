@@ -409,7 +409,7 @@
   }
 
   .sidebar-story-category {
-    font-size: 13px; /* Smaller category text on very small screens */
+    font-size: 9px; /* Smaller category text on very small screens */
   }
 
   .sidebar-story-category:after {

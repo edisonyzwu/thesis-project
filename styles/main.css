@@ -360,14 +360,35 @@ figure.news-app-figure img {
     margin-bottom: 10px;
   }
 
+  .chart-headline {
+    font-size: 0.8rem;
+    text-align: left;
+    padding-left: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
   figure.card figcaption {
     font-size: 13px;
-    padding: 6px 5px 0;
+    padding: 0;
     text-align: left;
   }
 
   section {
     padding: 0;
+  }
+
+  .process-chart img {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    padding-left: 0;
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  figure.card figcaption {
+    width: 100%;
+    margin-top: 0 !important;
+    text-align: left;
   }
 }
 
@@ -497,7 +518,7 @@ figcaption.italic {
   gap: 15px;
   width: 100%;
   padding-top: 2rem;
-  max-width: 90%; /* Full width container */
+  max-width: 100%; /* Full width container */
   margin: 0 auto 1rem auto; /* Reduced margin */
   text-align: center;
 }
@@ -631,7 +652,7 @@ figcaption.italic {
   .asymmetric-image-row {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
   }
 
   .image-row img,
@@ -644,7 +665,7 @@ figcaption.italic {
 
   .image-row figcaption,
   .asymmetric-image-row figcaption {
-    margin-top: 10px;
+    margin-top: 0;
     font-size: 14px;
     text-align: left;
   }
@@ -652,7 +673,7 @@ figcaption.italic {
   .image-caption,
   figcaption {
     font-size: 13px;
-    padding: 6px 8px 0;
+    padding: 0;
     text-align: left;
   }
   .hero-text {
@@ -673,7 +694,7 @@ figcaption.italic {
   /* Responsive styles for card on tablets */
   figure.card {
     max-width: 600px;
-    gap: 12px;
+    gap: 5px;
   }
 
   figure.card img {
