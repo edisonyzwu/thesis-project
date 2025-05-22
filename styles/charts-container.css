@@ -8,7 +8,7 @@
   gap: 10px;
   width: 80%;
   max-width: 110%; /* Exceed the width of body text */
-  margin: 3rem auto;
+  margin: 1.5rem auto;
 }
 
 .chart-item {

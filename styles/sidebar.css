@@ -300,7 +300,7 @@
 /* Responsive design for sidebar */
 @media (max-width: 768px) {
   .sidebar {
-    width: 100%; /* Full width on mobile */
+    width: 89%; /* Full width on mobile */
     max-width: 100%;
     padding: 20px; /* Smaller padding on mobile */
     padding-bottom: 70px; /* Increased padding at the bottom for mobile */
