@@ -18,6 +18,9 @@ body {
   /* display: flex;
   flex-direction: column; */
   min-height: 100vh;
+}
+
+body {
   overflow-x: hidden;
 }
 
@@ -39,20 +42,18 @@ p {
   position: fixed;
   top: 0;
   left: 0;
-  height: 5px;
   width: 100%;
-  background: rgba(255, 255, 255, 0.3);
+  height: 5px;
+  background: rgba(181, 181, 181, 0.3);
   z-index: 9999;
   opacity: 0.7;
-  transition: opacity 0.3s ease;
 }
 
 #progress-bar {
   height: 100%;
   width: 0%;
-  background: #333;
+  background: rgb(1, 71, 146); /* Red = visible */
   transition: width 0.2s ease-out;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .hero {
@@ -588,7 +589,6 @@ figcaption.italic {
   }
 
   /* Ensure scrolling works on mobile */
-  html,
   body {
     overflow-x: hidden;
     overflow-y: auto;
