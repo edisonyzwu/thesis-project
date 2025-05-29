@@ -1,0 +1,166 @@
+#scroll-container {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial, sans-serif;
+  position: relative;
+}
+
+#scroll-container p {
+  font-family: Roboto, Arial, sans-serif;
+  color: white;
+  margin: 0;
+}
+
+#step-4 p,
+#step-5 p,
+#step-6 p,
+#step-7 p,
+#step-8 p,
+#step-12 p {
+  margin-top: 0;
+}
+
+#step-5,
+#step-6 {
+  margin-bottom: 50vh;
+}
+
+.mapbox-caption {
+  font-size: 14px !important;
+  color: #b1b1b1 !important;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  line-height: 1.4;
+  display: block;
+  width: 100%;
+}
+
+a,
+a:hover,
+a:visited {
+  color: #0071bc;
+}
+
+#map {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 0; /* Map layer below, text layer above */
+}
+
+@media (max-width: 768px) {
+  #map {
+    position: sticky !important;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+  }
+}
+
+#header {
+  margin: auto;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+}
+
+#header h1,
+#header h2,
+#header p {
+  margin: 0;
+  padding: 2vh 2vw;
+  text-align: center;
+}
+
+#features {
+  padding-top: 40vh;
+  padding-bottom: 10vh;
+}
+
+/* General hidden class for elements that should be completely hidden */
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.centered {
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.lefty {
+  width: 33vw;
+  margin-left: 5vw;
+}
+
+.righty {
+  width: 33vw;
+  margin-left: 62vw;
+}
+
+.fully {
+  width: 100%;
+  margin: auto;
+}
+
+.light {
+  color: #444;
+  background-color: #fafafa;
+}
+
+.dark {
+  color: #fafafa;
+  background-color: #444;
+}
+
+.dark p {
+  font-size: 20px;
+}
+.step {
+  padding-bottom: 50vh;
+  margin-bottom: 10vh;
+  opacity: 0.25;
+}
+
+.step.active {
+  opacity: 0.99;
+}
+
+.step div {
+  padding: 20px;
+  line-height: 25px;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+.step div strong {
+  font-weight: 800;
+}
+
+.step img {
+  width: 100%;
+}
+
+.step video {
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 750px) {
+  .centered,
+  .lefty,
+  .righty,
+  .fully {
+    width: 90vw;
+    margin: 0 auto;
+  }
+}
+
+/* Fix issue on mobile browser where scroll breaks  */
+.mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan,
+.mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan .mapboxgl-canvas {
+  touch-action: pan-y pinch-zoom;
+}

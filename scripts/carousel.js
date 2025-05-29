@@ -90,7 +90,11 @@ document.addEventListener("DOMContentLoaded", function () {
   // Update item width calculation
   function updateItemWidth() {
     if (carouselInner.children.length > 0) {
-      itemWidth = carouselInner.children[0].offsetWidth;
+      const item = carouselInner.children[0];
+      const style = getComputedStyle(item);
+      const marginLeft = parseFloat(style.marginLeft) || 0;
+      const marginRight = parseFloat(style.marginRight) || 0;
+      itemWidth = item.offsetWidth + marginLeft + marginRight;
     }
   }
 

@@ -30,7 +30,7 @@ let config = {
       //   title: "China",
       //   image: "./assets/san-fran.jpeg",
       description:
-        "The trip often started with a one-way flight across the Pacific from <strong>China</strong> to <strong>Ecuador</strong> — one of the few countries that allowed Chinese passport holders to enter <strong>without a visa</strong>. (That policy was later rescinded in July 2024).",
+        "The trip often started with a one-way flight across the Pacific from <span style='color: orange; padding: 0'><strong>China</strong></span> to <span style='color: orange; padding: 0'><strong>Ecuador</strong></span> — one of the few countries that allowed Chinese passport holders to enter <strong>without a visa</strong>. (That policy was later rescinded in July 2024).",
       location: {
         center: [121.4737, 31.2304],
         zoom: 2,

@@ -149,7 +149,7 @@
   display: inline-block;
   text-align: center;
   width: 100%;
-  color: #666;
+  color: rgb(155, 155, 155);
   font-size: 9px;
   margin-bottom: 15px;
   font-weight: normal;
@@ -272,7 +272,7 @@
 .sidebar-story-content figure figcaption {
   margin-top: 8px;
   font-size: 14px;
-  color: #666;
+  color: rgb(155, 155, 155);
   font-style: italic;
   line-height: 1.4;
 }
@@ -281,7 +281,6 @@
   margin-top: 20px;
   position: relative;
   z-index: 0;
-  padding-bottom: 30px; /* Add padding at the bottom to prevent content from being cut off */
 }
 
 .sidebar-content p {
@@ -290,7 +289,13 @@
 
 /* Fix for the sidebar story content to ensure it doesn't overlap with figcaption */
 .sidebar-story-image + .sidebar-story-content {
-  margin-top: 60px; /* Increased space to prevent overlap with figcaption */
+  margin-top: 30px; /* Increased space to prevent overlap with figcaption */
+}
+
+.sidebar-image-caption {
+  font-size: 13px;
+  max-width: 400px;
+  padding: 10px 30px 0;
 }
 
 .sidebar-spacer {

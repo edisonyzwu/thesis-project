@@ -1,0 +1,75 @@
+#g-asylum-box,
+#g-asylum-box .g-artboard {
+  margin: 0 auto;
+}
+#g-asylum-box p {
+  margin: 0;
+}
+#g-asylum-box .g-aiAbs {
+  position: absolute;
+}
+#g-asylum-box .g-aiImg {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100% !important;
+}
+#g-asylum-box .g-aiSymbol {
+  position: absolute;
+  box-sizing: border-box;
+}
+#g-asylum-box .g-aiPointText p {
+  white-space: nowrap;
+}
+#g-asylum-Artboard_11 {
+  position: relative;
+  overflow: hidden;
+}
+#g-asylum-Artboard_11 p {
+  font-family: arial, helvetica, sans-serif;
+  font-weight: regular;
+  line-height: 27px;
+  height: auto;
+  opacity: 1;
+  letter-spacing: 0em;
+  font-size: 23px;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  text-transform: none;
+  padding-bottom: 0;
+  padding-top: 0;
+  mix-blend-mode: normal;
+  font-style: normal;
+  position: static;
+}
+#g-asylum-Artboard_11 .g-pstyle0 {
+  font-weight: bold;
+  height: 27px;
+  color: rgb(255, 255, 255);
+}
+#g-asylum-Artboard_11 .g-pstyle1 {
+  font-weight: bold;
+  height: 27px;
+}
+#g-asylum-Artboard_11 .g-pstyle2 {
+  font-weight: bold;
+  height: 27px;
+  text-align: center;
+}
+#g-asylum-Artboard_11 .g-pstyle3 {
+  line-height: 22px;
+  height: 22px;
+  font-size: 18px;
+  text-align: center;
+}
+#g-asylum-Artboard_11 .g-pstyle4 {
+  line-height: 31px;
+  height: 31px;
+  font-size: 18px;
+}
+#g-asylum-Artboard_11 .g-pstyle5 {
+  font-weight: 500;
+  line-height: 34px;
+  height: 34px;
+  color: rgb(153, 152, 152);
+}

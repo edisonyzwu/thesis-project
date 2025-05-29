@@ -1,9 +1,10 @@
 /* Photo Carousel Styles */
 .photo-carousel-container {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1600px;
   margin: 2rem auto;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  padding-top: 2rem;
   position: relative;
   will-change: transform; /* Hint to browser about upcoming changes */
 }
@@ -31,7 +32,7 @@
 .carousel-item {
   flex: 0 0 calc(33.333% - 10px);
   margin: 0 5px;
-  height: 250px;
+  height: 400px;
   transform: translateZ(0); /* Force GPU rendering */
   backface-visibility: hidden; /* Prevent flickering */
   box-sizing: border-box; /* Ensure padding and borders are included in width calculation */
@@ -100,9 +101,11 @@
 
 .carousel-caption {
   text-align: left;
-  margin-top: 10px;
-  color: #666;
+  color: rgb(155, 155, 155);
   font-size: 15px;
+  padding-top: 0;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 /* Responsive styles */

@@ -11,186 +11,17 @@
     <link rel="stylesheet" href="styles/figcaption-fix.css" />
     <link rel="stylesheet" href="styles/d3-container.css" />
     <link rel="stylesheet" href="styles/text-image-layout.css" />
+    <link rel="stylesheet" href="styles/map.css" />
     <link rel="stylesheet" href="styles/charts-container.css" />
     <link rel="stylesheet" href="styles/carousel.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/asylum.css" />
     <link rel="icon" type="image/x-icon" href="assets/logo.jpg" />
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/mapbox-gl-globe-minimap@1.2.0/dist/bundle.js"></script>
     <script src="https://unpkg.com/scrollama"></script>
-    <style>
-      #scroll-container {
-        margin: 0;
-        padding: 0;
-        font-family: Roboto, Arial, sans-serif;
-        position: relative;
-      }
-
-      #scroll-container p {
-        font-family: Roboto, Arial, sans-serif;
-        color: white;
-      }
-
-      #step-4 p,
-      #step-5 p,
-      #step-6 p,
-      #step-7 p,
-      #step-8 p,
-      #step-12 p {
-        margin-top: 0;
-      }
-
-      #step-5,
-      #step-6 {
-        margin-bottom: 50vh;
-      }
-
-      .mapbox-caption {
-        font-size: 14px !important;
-        color: #b1b1b1 !important;
-        text-align: left;
-        padding: 0;
-        margin: 0;
-        line-height: 1.4;
-        font-style: italic;
-        display: block;
-        width: 100%;
-      }
-
-      a,
-      a:hover,
-      a:visited {
-        color: #0071bc;
-      }
-
-      #map {
-        position: sticky;
-        top: 0;
-        height: 100vh;
-        width: 100%;
-        z-index: 0; /* Map layer below, text layer above */
-      }
-
-      @media (max-width: 768px) {
-        #map {
-          position: sticky !important;
-          top: 0;
-          height: 100vh;
-          width: 100%;
-          z-index: 0;
-        }
-      }
-
-      #header {
-        margin: auto;
-        width: 100%;
-        position: relative;
-        z-index: 5;
-      }
-
-      #header h1,
-      #header h2,
-      #header p {
-        margin: 0;
-        padding: 2vh 2vw;
-        text-align: center;
-      }
-
-      #features {
-        padding-top: 40vh;
-        padding-bottom: 10vh;
-      }
-
-      /* General hidden class for elements that should be completely hidden */
-      .hidden {
-        display: none !important;
-        visibility: hidden !important;
-      }
-
-      .centered {
-        width: 50vw;
-        margin: 0 auto;
-      }
-
-      .lefty {
-        width: 33vw;
-        margin-left: 5vw;
-      }
-
-      .righty {
-        width: 33vw;
-        margin-left: 62vw;
-      }
-
-      .fully {
-        width: 100%;
-        margin: auto;
-      }
-
-      .light {
-        color: #444;
-        background-color: #fafafa;
-      }
-
-      .dark {
-        color: #fafafa;
-        background-color: #444;
-      }
-
-      .dark p {
-        font-size: 20px;
-      }
-      .step {
-        padding-bottom: 50vh;
-        margin-bottom: 10vh;
-        opacity: 0.25;
-      }
-
-      .step.active {
-        opacity: 0.99;
-      }
-
-      .step div {
-        padding: 20px 30px;
-        line-height: 25px;
-        font-size: 16px;
-        border-radius: 6px;
-      }
-
-      .step div strong {
-        font-weight: 800;
-      }
-
-      .step img {
-        width: 100%;
-        padding-top: 10px;
-      }
-
-      .step video {
-        width: 100%;
-        padding-top: 10px;
-        margin: 0;
-      }
-
-      @media (max-width: 750px) {
-        .centered,
-        .lefty,
-        .righty,
-        .fully {
-          width: 90vw;
-          margin: 0 auto;
-        }
-      }
-
-      /* Fix issue on mobile browser where scroll breaks  */
-      .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan,
-      .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan
-        .mapboxgl-canvas {
-        touch-action: pan-y pinch-zoom;
-      }
-    </style>
   </head>
 
   <body>
@@ -498,9 +329,7 @@
             </div>
           </div>
           <div class="sidebar-button">
-            <button class="open-sidebar" onclick="openSidebar('hospital')">
-              Open Story on this Page
-            </button>
+            <button class="open-sidebar" onclick="openSidebar('hospital')">Read More</button>
           </div>
         </div>
       </div>
@@ -519,17 +348,11 @@
           <h2 class="sidebar-title">When the Hospital Closed Its Doors</h2>
           <figure class="sidebar-story-image">
             <img src="assets/zhanjian.jpg" alt="Zhang and his wife" />
-            <figcaption
-              class="image-caption"
-              style="margin-bottom: 10px; padding-bottom: 10px; display: block; clear: both"
-            >
+            <figcaption class="sidebar-image-caption">
               Zhang Jian and his wife sit at a family hostel in Rowland Heights, Los Angeles.
             </figcaption>
           </figure>
-          <div
-            class="sidebar-story-content"
-            style="margin-top: 40px; position: relative; z-index: 0"
-          >
+          <div class="sidebar-story-content">
             <p>
               Zhang, 32, owned an e-commerce livestreaming business in Hebei, northern China, while
               his wife stayed at home to care for their child.
@@ -721,9 +544,7 @@
               </div>
             </div>
             <div class="sidebar-button">
-              <button class="open-sidebar" onclick="openSidebar('crossing')">
-                Open Story on this Page
-              </button>
+              <button class="open-sidebar" onclick="openSidebar('crossing')">Read More</button>
             </div>
           </div>
         </div>
@@ -742,29 +563,11 @@
             <h2 class="sidebar-title">The Crossing</h2>
             <figure class="sidebar-story-image">
               <img src="assets/crossing.jpg" alt="Zhang and his wife crossing the river" />
-              <figcaption
-                class="image-caption"
-                style="
-                  margin-top: 300px;
-                  margin-bottom: 30px;
-                  padding-bottom: 10px;
-                  display: block;
-                  clear: both;
-                  visibility: visible;
-                  opacity: 1;
-                  position: relative;
-                  z-index: 5;
-                  text-align: center;
-                  margin-top: 10px;
-                "
-              >
+              <figcaption class="sidebar-image-caption">
                 The Zhang family and other migrants cross a river during their journey to the U.S.
               </figcaption>
             </figure>
-            <div
-              class="sidebar-story-content"
-              style="margin-top: 40px; position: relative; z-index: 0"
-            >
+            <div class="sidebar-story-content">
               <p>
                 Carrying their daughter across mountains and broken borders, Jian Zhang’s family
                 entered the U.S. in silence.
@@ -890,7 +693,7 @@
 
             <figure class="full-width-image">
               <img src="assets/Jiang-out-for-work.jpg" alt="Jiang sets out for work before dawn" />
-              <figcaption class="italic">Jiang sets out for work before dawn.</figcaption>
+              <figcaption class="center">Jiang sets out for work before dawn.</figcaption>
             </figure>
 
             <p>Before the sun rose, Jiang was already en route to his first stop: the warehouse.</p>
@@ -913,7 +716,7 @@
                 alt="Packages await sorting and delivery inside a warehouse in Los Angeles"
                 class="side-by-side-image"
               />
-              <figcaption class="italic centered">
+              <figcaption class="package">
                 Packages await sorting and delivery inside a warehouse in Los Angeles.
               </figcaption>
             </figure>
@@ -967,21 +770,11 @@
                 alt="Packages in the trunk of Jiang's car"
                 class="right-image"
               />
-            </figure>
-
-            <!-- Photo Carousel -->
-            <div class="photo-carousel-container">
-              <div class="photo-carousel">
-                <div class="carousel-inner">
-                  <!-- Images will be loaded here by JavaScript -->
-                </div>
-                <button class="carousel-control prev" aria-label="Previous photos">&lt;</button>
-                <button class="carousel-control next" aria-label="Next photos">&gt;</button>
-              </div>
-              <figcaption class="carousel-caption">
-                A typical day of Jiang — loading, driving, and delivering across Los Angeles
+              <figcaption class="image-caption seat">
+                Every day, Jiang crams 150 to 200 packages into his trunk, back seat, and front
+                passenger seat.
               </figcaption>
-            </div>
+            </figure>
 
             <p>
               During deliveries, Jiang often wore a furrowed brow and tight lips, like a sprinter at
@@ -1006,6 +799,20 @@
               occasionally helped him find the right door, offering fleeting warmth in an unfamiliar
               world.
             </p>
+
+            <!-- Photo Carousel -->
+            <div class="photo-carousel-container">
+              <div class="photo-carousel">
+                <div class="carousel-inner">
+                  <!-- Images will be loaded here by JavaScript -->
+                </div>
+                <button class="carousel-control prev" aria-label="Previous photos">&lt;</button>
+                <button class="carousel-control next" aria-label="Next photos">&gt;</button>
+              </div>
+              <figcaption class="carousel-caption">
+                A typical day of Jiang — loading, driving, and delivering across Los Angeles
+              </figcaption>
+            </div>
 
             <p>
               Most nights, he didn’t return until after dark, sometimes not until nine or ten. His
@@ -1047,9 +854,7 @@
               </div>
             </div>
             <div class="sidebar-button">
-              <button class="open-sidebar" onclick="openSidebar('noodle')">
-                Open Story on this Page
-              </button>
+              <button class="open-sidebar" onclick="openSidebar('noodle')">Read More</button>
             </div>
           </div>
         </div>
@@ -1068,24 +873,11 @@
             <h2 class="sidebar-title">From Manager to Noodle Shop Worker</h2>
             <figure class="sidebar-story-image">
               <img src="assets/leo-back.jpg" alt="Leo working at noodle shop" />
-              <figcaption
-                class="image-caption"
-                style="
-                  margin-bottom: 30px;
-                  padding-bottom: 10px;
-                  display: block;
-                  clear: both;
-                  visibility: visible;
-                  opacity: 1;
-                "
-              >
+              <figcaption class="sidebar-image-caption">
                 Leo works at a noodle shop in Monterey Park, Los Angeles.
               </figcaption>
             </figure>
-            <div
-              class="sidebar-story-content"
-              style="margin-top: 20px; position: relative; z-index: 0"
-            >
+            <div class="sidebar-story-content">
               <p>For Leo, the decision to leave China had more to do with the system itself.</p>
 
               <p>
@@ -1269,7 +1061,7 @@
 
             <figure class="news-app-figure">
               <img src="assets/news-app.jpg" alt="Screenshot of LA Chinese News app" />
-              <figcaption class="image-caption">
+              <figcaption class="image-caption lawyer">
                 News of ICE detaining undocumented immigrants appears on Leo’s Chinese-language news
                 app.
               </figcaption>
@@ -1306,7 +1098,8 @@
                 src="assets/card-translate.png"
                 alt="Trasnlation of the Screenshot of LA Chinese News app"
               />
-              <figcaption class="image-caption">
+
+              <figcaption class="image-caption ngo">
                 A card distributed by lawyers and NGOs to help immigrants assert their rights during
                 encounters with ICE.
               </figcaption>
