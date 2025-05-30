@@ -80,8 +80,8 @@
 
 /* Styling for the image in the sidebar */
 .sidebar-story-image {
-  margin: 0 -30px 20px; /* Negative margin to stretch beyond the padding */
-  width: calc(100% + 60px); /* Compensate for the negative margins */
+  margin: 0 -30px 20px;
+  /* Compensate for the negative margins */
   max-height: 500px; /* Set a reasonable max height */
   overflow: hidden;
   position: relative; /* For positioning the caption */
@@ -295,7 +295,7 @@
 .sidebar-image-caption {
   font-size: 13px;
   max-width: 400px;
-  padding: 10px 30px 0;
+  padding: 10px 15px 0;
 }
 
 .sidebar-spacer {
@@ -384,7 +384,7 @@
   .sidebar-story-image {
     margin: 0 -15px 15px; /* Adjust negative margin for smaller padding */
     width: calc(100% + 30px); /* Adjust width calculation for smaller padding */
-    max-height: 300px; /* Smaller max height on mobile */
+    max-height: 350px; /* Smaller max height on mobile */
   }
 
   .close-sidebar {
